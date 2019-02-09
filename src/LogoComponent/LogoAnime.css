@@ -1,0 +1,117 @@
+.LogoAnime {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body.ready {
+  opacity: 1;
+}
+.logo-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -40px;
+}
+.letters {
+  position: relative;
+  display: flex;
+  width: 682px;
+  height: 162px;
+}
+
+.letter {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.letter-l{
+  position: relative;
+  width: 70px !important;
+  height: 120px;
+}
+.letter-o1{
+  margin-left: -50px !important;
+}
+.letter-o2{
+  margin-left: -30px !important;
+}
+.letter-a{
+  margin-left: -24px !important;
+}
+.letter:not(:first-child) {
+  margin-left: -48px;
+}
+.dot {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  transform: scale(0);
+}
+.dot-i {
+  top: 0;
+  left: 240px;
+}
+.dot-e {
+  bottom: 22px;
+  right: -8px;
+}
+.logo-icon {
+  display: flex;
+  position: absolute;
+  left: 230px;
+  top: -50px;
+  width: 222px;
+  height: 62px;
+}
+.icon {
+  width: 262px;
+  height: 72px;
+  margin-top: 20px;
+  opacity: 0;
+}
+.icon-curve{
+  width: 60px;
+  height: 60px;
+}
+.icon-text {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 160px;
+  height: 62px;
+}
+.icon-text path,
+.icon-text polygon {
+  opacity: 0;
+}
